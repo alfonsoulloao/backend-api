@@ -28,7 +28,8 @@ const dataBaseConfig: IDbConfig = JSON.parse(environments.db.connectionString);
       max: 5,   //Número máximo de conexiones en el grupo. El valor predeterminado es 5
       min: 0,  //Número mínimo de conexiones en el grupo. El valor predeterminado es 0
       acquire: 30000, //El tiempo máximo, en milisegundos, que ese grupo intentará obtener la conexión antes de generar un error
-      idle: 10000 //El tiempo máximo, en milisegundos, que una conexión puede estar inactiva antes de liberarse
+      idle: 10000  
+      //El tiempo máximo, en milisegundos, que una conexión puede estar inactiva antes de liberarse
     }
   });
 
